@@ -85,7 +85,7 @@ def count(trie: Trie, query_seq: str) -> int:
         for child_idx in trie[pointer].children:
             if trie[child_idx].body == element:
                 new_index = child_idx
-            break
+                break
 
         assert new_index is not None
         pointer = new_index
